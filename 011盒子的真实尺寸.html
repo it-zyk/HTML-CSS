@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>盒子的真实尺寸</title>
+  <style type="text/css">
+
+  .box, .box2,.box3{
+    width:50px;
+    height:50px;
+    background-color:gold;
+  }
+
+  .box2, .box3{
+    border:50px solid #000;
+
+  }
+  .box3{
+      padding: 50px;
+  }
+  .des {
+    font-size: 20px;
+    line-height:40px;
+  }
+
+  </style>
+</head>
+<body>
+  <h1>盒子的真实尺寸：</h1>
+  <div class="des">
+      <strong>  盒子的宽度：</strong> width +  (左+右)border的宽度 + （左+右）padding值
+      <br/>
+      <strong>  盒子的高度：</strong> height + (上+下)border的宽度 + （上+下）padding值
+  </div>
+  <br>
+  <hr/>
+  <br>
+  <div class="box">1</div>
+  <br/>
+  <div class="box2">2</div>
+  <br/>
+  <div class="box3">3</div>
+</body>
+</html>
